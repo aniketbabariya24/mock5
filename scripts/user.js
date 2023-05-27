@@ -1,5 +1,5 @@
 let form= document.getElementById("addUser");
-let url="https://mock5-05mv.onrender.com/"
+let url="https://mock5-05mv.onrender.com"
 form.onsubmit= async (event)=>{
 event.preventDefault();
 
@@ -23,5 +23,6 @@ let res= await fetch(`${url}/freelancers`, {
 
    });
     let data= await res.json();
+    console.log(data)
     window.alert("Successfully registered.")
 }

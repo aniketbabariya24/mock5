@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Home</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+      #nav{
+        background-color: rgb(9, 5, 5);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }  
+      #nav>div{
+        width: 46%;
+        height: 60px;
+      }
+      button{
+        height: 60%;
+        width: 100%;
+        margin-top: 12px;
+        background-color: grey;
+        font-size: large;
+        color: white;
+      }
+      button:hover{
+        cursor: pointer;
+        background-color: rgb(63, 63, 63);
+      }
+</style>
 <body>
+    <H1>Welcome To Masai Freelancing System</H1>
+    <h2>Please select Admin/User</h2>
     <div id="nav">
         <div><button onclick="goToAdmin()">Admin</button></div>
         <div><button onclick="goToUser()">Users</button></div>
