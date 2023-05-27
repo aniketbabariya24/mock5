@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/freelancers.css">
+    <title>Freelancers</title>
+</head>
+<body>
+  <div id="mainDiv">
+    <div id="filter">
+        <select onchange="myPFChange()" id="myPf">       
+            <option value="">Select Profession</option>
+            <option value="Student">Student</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Graphic Designer">Graphic Designer</option>
+          </select>   
+          <button onclick="mysort()">Hourly Rate: Low to High</button>
+          <button onclick="mysort2()">Hourly Rate: High to Low</button>
+
+          <div id="update">
+            <h2>update Freelancer</h2>
+            <input type="text" id="mid"  placeholder="ID" />
+            <input type="text" id="upName"  placeholder="Name" />
+            <input type="text" id="upEmail"  placeholder="Email" />
+            <input type="text" id="upImage"  placeholder="Image Url" />
+            <input type="text" id="upPro"  placeholder="Profession" />
+            <input type="text" id="upSkills"  placeholder="Skills" />
+            <input type="number" id="upRate"  placeholder="Hourly Rate" />
+            <input type="text" id="upBook"  placeholder="Is Booked" />
+            <button id="update-btn">
+              Update Freelancer
+            </button>
+          </div>
+
+       </div>
+    <div id="myc">
+        <div id="container"></div>
+        <button id="prev">Previous</button><button id="next">Next</button>
+    </div>
+  </div>
+</body>
+</html>
+<script src="../scripts/freelancers.js"></script>
